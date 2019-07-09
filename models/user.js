@@ -7,7 +7,7 @@ const db_user = db.model('user', {
 		type: String,
 		required: [true, 'Email is required']
 	},
-	userName: {
+	name: {
 		type: String,
 		required: [true, 'User name is required']
 	},
@@ -18,6 +18,12 @@ const db_user = db.model('user', {
 	profilePicture: {
 		type: String,
 		required: [true, 'profile picture url is required']
+	},
+	about: {
+		type: String,
+	},
+	location: {
+		type: String,
 	}
 
 
