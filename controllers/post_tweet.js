@@ -1,4 +1,4 @@
-const db_message = require('../models/message')
+const db_tweet = require('../models/tweets')
 const jwt = require('jsonwebtoken')
 
 module.exports = (req, res) => {

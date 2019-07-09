@@ -1,4 +1,4 @@
-const db_hashtag = require('../models/hashtag')
+const db_hashtag = require('../models/hashtags')
 
 module.exports = (req, res) => {
 	db_hashtag.find({}).then((data) => {
