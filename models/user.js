@@ -15,16 +15,7 @@ const db_user = db.model('user', {
 		type: String,
 		required: [true, 'Message body is required']
 	},
-	profilePicture: {
-		type: String,
-		required: [true, 'profile picture url is required']
-	},
-	about: {
-		type: String,
-	},
-	location: {
-		type: String,
-	}
+	
 
 
 })

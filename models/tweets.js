@@ -15,17 +15,8 @@ const db_tweet = db.model('tweet', {
 	body: {
 		type: String,
 		required: [true, 'tweet body is required']
-	},
-	hashtag: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'hashtag',
-		required: [true, 'hashtag is required']
-	},
-	image: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'user',
-		required: [true, 'profile image is required']
 	}
+
 
 
 })
