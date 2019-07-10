@@ -18,7 +18,7 @@ const db_tweet = db.model('tweet', {
 	},
 	hashtag: {
 		type: mongoose.Schema.Types.ObjectId,
-		ref: 'hashtags',
+		ref: 'hashtag',
 		required: [true, 'hashtag is required']
 	},
 

@@ -1,4 +1,4 @@
-const db_hashtag = require('../models/hashtags')
+const db_hashtag = require('../models/hashtag')
 const jwt = require('jsonwebtoken')
 
 module.exports = (req, res) => {

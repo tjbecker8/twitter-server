@@ -7,8 +7,8 @@ module.exports = (req, res) => {
 		q.channel = req.query.channel
 	}
 	db_tweet.find(q).populate({
-		path: 'hastag',
-		select: 'channelName'
+		path: 'hashtag',
+		select: 'name'
 	}).populate({
 		path: 'author',
 		select: 'email name image'
