@@ -11,7 +11,7 @@ module.exports = (req, res) => {
 		select: 'channelName'
 	}).populate({
 		path: 'author',
-		select: 'email name'
+		select: 'email name image'
 	}).sort('date').then((data) => {
 		res.send(data)
 	}).catch((err)=>{
