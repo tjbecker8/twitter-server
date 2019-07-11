@@ -2,8 +2,12 @@ const db_hashtag = require('../models/hashtag')
 const jwt = require('jsonwebtoken')
 
 module.exports = (req, res) => {
-	jwt.verify(req.body.token, process.env.SECRET, (err, decoded) => {
+	console.log('req',req.headers);
+	let token = req.headers.authorization.split(' ')[1]
+	console.log('token',token);
+	jwt.verify(token, process.env.SECRET, (err, decoded) => {
 		if (decoded) {
+			console.log('decoded', decoded);
 			db_hashtag.create(req.body).then((data) => {
 				res.send(data)
 			}).catch((err)=>{
