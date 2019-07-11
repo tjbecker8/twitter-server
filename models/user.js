@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const db_user = db.model('user', {
 	email: {
 		type: String,
-		required: [true, 'Email is required']
+		required: [true, 'Email is required'],
 	},
 	name: {
 		type: String,

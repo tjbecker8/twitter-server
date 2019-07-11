@@ -12,7 +12,7 @@ module.exports = (req, res) => {
 	}).populate({
 		path: 'author',
 		select: 'email name image'
-	}).sort('date').then((data) => {
+	}).sort('-date').then((data) => {
 		res.send(data)
 	}).catch((err)=>{
 		res.send(err)
