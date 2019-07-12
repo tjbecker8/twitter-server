@@ -14,6 +14,7 @@ app.use(cors())
 
 app.get('/api/tweets', require('./controllers/get_tweets'))
 app.post('/api/tweets', require('./controllers/post_tweet'))
+app.patch('/api/tweets/id', require('./controllers/patch_tweet'))
 
 app.get('/api/hashtag', require('./controllers/get_hashtag'))
 app.post('/api/hashtag', require('./controllers/post_hashtag'))

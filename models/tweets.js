@@ -21,6 +21,10 @@ const db_tweet = db.model('tweet', {
 		ref: 'hashtag',
 		required: [true, 'hashtag is required']
 	},
+	likes: {
+		type: Number,
+		default: 0,
+	},
 
 
 
