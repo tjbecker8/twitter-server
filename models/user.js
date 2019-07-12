@@ -9,16 +9,16 @@ const db_user = db.model('user', {
 	},
 	name: {
 		type: String,
-		required: [true, 'User name is required']
+		required: [true, 'User name is required'],
 	},
 	password: {
 		type: String,
-		required: [true, 'Message body is required']
+		required: [true, 'Message body is required'],
 	},
 	image: {
 		type: String,
-		required: [true, 'Profile image is required']
-	}
+		required: [true, 'Profile image is required'],
+	},
 
 
 
